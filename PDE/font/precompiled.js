@@ -17,9 +17,9 @@ var sketchProc = function($p) {
             function $superCstr() {
                 $p.extendClassChain($this_1)
             }
-            $this_1.loc = new Vec3D(0, 0, 0);
-            $this_1.speed = new Vec3D($p.random(-1, 1), $p.random(-1, 1), 0);
-            $this_1.grav = new Vec3D(0, 0.1, 0);
+            $this_1.loc = new toxi.geom.Vec3D(0, 0, 0);
+            $this_1.speed = new toxi.geom.Vec3D($p.random(-1, 1), $p.random(-1, 1), 0);
+            $this_1.grav = new toxi.geom.Vec3D(0, 0.1, 0);
 
             function run$0() {
                 $this_1.$self.display();
@@ -100,7 +100,7 @@ var sketchProc = function($p) {
         ball = new $p.ArrayList();
 
         for (var i = 0; i < 100; i++) {
-            var origin = new Vec3D($p.random($p.width), $p.random(200), 0);
+            var origin = new toxi.geom.Vec3D($p.random($p.width), $p.random(200), 0);
             var ballC = new Ball(origin);
             ball.add(ballC);
         }
