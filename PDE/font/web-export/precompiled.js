@@ -11,11 +11,7 @@ var sketchProc = function($p) {
         $p.background(0);
         $p.size(800, 500);
         $p.noStroke();
-<<<<<<< Updated upstream
-        $p.fill(8, 25, 92);
-=======
         $p.fill(255, 255, 255);
->>>>>>> Stashed changes
 
         letras = $p.createGraphics($p.width, $p.height);
 
