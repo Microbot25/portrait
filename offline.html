@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+		
+		<style>
+			@font-face {
+			  font-family: 'WeAreAlien';
+			  src: url('PDE/font/wearealien.eot'); /* IE9 Compat Modes */
+			  src: url('PDE/font/wearealien.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			       url('PDE/font/wearealien.woff') format('woff'), /* Modern Browsers */
+			       url('PDE/font/wearealien.ttf')  format('truetype'), /* Safari, Android, iOS */
+			       url('PDE/font/wearealien.svg#svgFontName') format('svg'); /* Legacy iOS */
+			}
+			p {
+				font-family: 'WeAreAlien';
+			}
+			canvas {
+				width: 100%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body  onload="document.getElementById('code').focus()">
+		<p>AAAAAAAshspfibpawbpof poasnf pofawon </p>
+		<canvas id="mysketch"></canvas>
+
+    <h1>Processing Helper</h1>
+    <p>Paste your Processing code below and execute whichever options you require:</p>
+
+    <h2>Processing Code</h2>
+    <textarea rows="20" cols="80" id="code"></textarea>
+    <br>  <input onclick="runSketch();" type="button" value="Run"></input>
+    &nbsp;<input onclick="convertToJS();" type="button" value="Convert to JS"></input>
+    &nbsp;<input onclick="generateDataURI();" type="button" value="Generate Data URI"></input>
+
+    <h2>Canvas</h2>
+    <div id="sketch-container">
+      <canvas id="sketch"></canvas>
+    </div>
+
+    <h2>Output</h2>
+    <textarea rows="20" cols="80" id="output" readonly="readonly">None.</textarea>
+
+    <script type="text/javascript" src="js/processing.js"></script>
+    <script src="js/jsbeautify.js"></script>
+    <script src="js/processing-helper.js"></script>
+	<script src="PDE/font/precompiled.js"></script>
+	</body>
+</html>
